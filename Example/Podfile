@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'UserDefaultsProperty_Example' do
+  pod 'UserDefaultsProperty', :path => '../'
+
+  target 'UserDefaultsProperty_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
