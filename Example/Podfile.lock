@@ -1,0 +1,16 @@
+PODS:
+  - UserDefaultsProperty (1.0.0)
+
+DEPENDENCIES:
+  - UserDefaultsProperty (from `../`)
+
+EXTERNAL SOURCES:
+  UserDefaultsProperty:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UserDefaultsProperty: be5e8e01b9ec5f720c1cfb46ee0aefd1418d4925
+
+PODFILE CHECKSUM: 857e494103e757316b53b3c408b6016ef577dd4b
+
+COCOAPODS: 1.8.4

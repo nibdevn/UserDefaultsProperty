@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UserDefaultsProperty'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of UserDefaultsProperty.'
+  s.version          = '1.0.0'
+  s.summary          = 'This is UserDefaultsProperty.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,20 +17,19 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'This is UserDefaultsProperty. Simple use UserDefaults CUID'
 
-  s.homepage         = 'https://github.com/nibdevn@gmail.com/UserDefaultsProperty'
+  s.homepage         = 'https://github.com/Nahanwoong/UserDefaultsProperty'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'nibdevn@gmail.com' => 'nibdevn@gmail.com' }
-  s.source           = { :git => 'https://github.com/nibdevn@gmail.com/UserDefaultsProperty.git', :tag => s.version.to_s }
+  s.author           = { 'Nahanwoong' => 'nibdevn@gmail.com' }
+  s.source           = { :git => 'https://github.com/Nahanwoong/UserDefaultsProperty.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'UserDefaultsProperty/Classes/**/*'
+  s.ios.deployment_target = '10.0'
+  s.swift_version = '5.0'
+  
+  s.source_files = 'UserDefaultsProperty/**/*'
   
   # s.resource_bundles = {
   #   'UserDefaultsProperty' => ['UserDefaultsProperty/Assets/*.png']

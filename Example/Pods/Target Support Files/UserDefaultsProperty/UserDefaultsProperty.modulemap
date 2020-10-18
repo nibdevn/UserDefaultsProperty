@@ -1,0 +1,6 @@
+framework module UserDefaultsProperty {
+  umbrella header "UserDefaultsProperty-umbrella.h"
+
+  export *
+  module * { export * }
+}
