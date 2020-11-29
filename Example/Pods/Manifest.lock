@@ -1,5 +1,5 @@
 PODS:
-  - UserDefaultsProperty (1.0.0)
+  - UserDefaultsProperty (1.1.0)
 
 DEPENDENCIES:
   - UserDefaultsProperty (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  UserDefaultsProperty: be5e8e01b9ec5f720c1cfb46ee0aefd1418d4925
+  UserDefaultsProperty: efd6a946a477989666243bb3b073d9e3f498899f
 
 PODFILE CHECKSUM: 857e494103e757316b53b3c408b6016ef577dd4b
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.0

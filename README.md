@@ -2,7 +2,7 @@
 
  
 ![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
-[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/Nahanwoong/UserDefaultsProperty/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/nibdevn/UserDefaultsProperty/blob/master/LICENSE)
 
 ## Summary
 - [Requirements](#requirements)
@@ -122,7 +122,7 @@ it, simply add the following line to your Podfile:
   
 ```ruby
 
-pod 'UserDefaultsProperty', :tag => '1.0.0', :git => 'https://github.com/Nahanwoong/UserDefaultsProperty'
+pod 'UserDefaultsProperty', :tag => '1.1.0', :git => 'https://github.com/nibdevn/UserDefaultsProperty'
 
 ```
 
