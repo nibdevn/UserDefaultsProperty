@@ -1,34 +1,80 @@
 # UserDefaultsProperty
 
- 
+
 ![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
 [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/nibdevn/UserDefaultsProperty/blob/master/LICENSE)
 
 ## Summary
 - [Requirements](#requirements)
-- [Usage](#usage)
 - [Installation](#installation)
+- [Usage](#usage)
 - [Example](#example)
 
 ## Requirements
 
 - Swift 5.0
-- iOS 10.0+
+- iOS 11.0+
+
+## Installation
+
+#### Cocoapods
+
+UserDefaultsProperty is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+
+```ruby
+
+pod 'UserDefaultsProperty', :tag => '2.0.0', :git => 'https://github.com/nibdevn/UserDefaultsProperty'
+
+```
+
+#### Swift Package Manager
+
+You can use The Swift Package Manager to install GradientImage by adding the proper description to your Package.swift file:
+
+```swift
+import PackageDescription
+
+let package = Package(
+    name: "YOUR_PROJECT_NAME",
+    targets: [],
+    dependencies: [
+        .package(url: "https://github.com/nibdevn/UserDefaultsProperty.git", from: "2.0.0")
+    ]
+)
+```
+
+Next, add GradientImage to your targets dependencies like so:
+
+```swift
+.target(
+    name: "YOUR_TARGET_NAME",
+    dependencies: [
+        "UserDefaultsProperty",
+    ]
+),
+```
+
+Then run swift package update.
+
 
 ## Usage
 > Object
+
 #### Object must be implement 'Codable' Protocol
+
 ```swift
-enum  Gender: String, Codable {
+enum Gender: String, Codable {
     case male = "male"
     case female = "female"
 }
 
-class  User: Codable {
+class User: Codable {
     var age: Int
     var name: String
     var gender: Gender
-    
+
     init(age: Int, name: String, gender: Gender) {
         self.age = age
         self.name = name
@@ -36,13 +82,13 @@ class  User: Codable {
     }
 }
 
-enum  PetType: String, Codable {
+enum PetType: String, Codable {
     case dog  = "dog"
     case cat  = "cat"
     case rabbit = "rabbit"
 }
 
-class  Pet: Codable {
+class Pet: Codable {
     var age: Int
     var type: PetType
     var owner: User
@@ -53,77 +99,76 @@ class  Pet: Codable {
         self.owner = owner
     }
 }
+
 ```
+
 > Non Optional
+
 ```swift
-@UserDefaultsProperty(key: "Value_Int", defaultValue: 1)
-var  intValue: Int
 
-@UserDefaultsProperty(key: "Value_Float", defaultValue: 2.0)
-var  floatValue: Float
+@UserDefaultsProperty(key: "Value_Int")
+var intValue: Int = 1
 
-@UserDefaultsProperty(key: "Value_Double", defaultValue: 3.0)
-var  doubleValue: Double
+@UserDefaultsProperty(key: "Value_Float")
+var floatValue: Float = 2.0
 
-@UserDefaultsProperty(key: "Value_Bool", defaultValue: true)
-var  boolValue: Bool
+@UserDefaultsProperty(key: "Value_Double")
+var doubleValue: Double = 3.0
 
-@UserDefaultsProperty(key: "Value_String", defaultValue: "Test")
-var  stringValue: String
+@UserDefaultsProperty(key: "Value_Bool")
+var boolValue: Bool = true
 
-@UserDefaultsProperty(key: "Value_Date", defaultValue: Date())
-var  dateValue: Date
+@UserDefaultsProperty(key: "Value_String")
+var stringValue: String = "Test"
 
-@UserDefaultsProperty(key: "Value_URL", defaultValue: URL(string: "https://github.com")!)
-var  urlValue: URL
+@UserDefaultsProperty(key: "Value_Date")
+var dateValue: Date = Date()
 
-@UserDefaultsProperty(key: "Value_User", defaultValue: User(age: 10, name: "James", gender: .male))
-var  userValue: User
+@UserDefaultsProperty(key: "Value_URL")
+var urlValue: URL = URL(string: "https://github.com")!
+
+@UserDefaultsProperty(key: "Value_User")
+var userValue: User = User(age: 10, name: "James", gender: .male)
+
 ```
+
 > Optional
+
 ```swift
 @UserDefaultsProperty(key: "Value_Optional_Int")
-var  optionalIntValue: Int?
+var optionalIntValue: Int?
 
 @UserDefaultsProperty(key: "Value_Optional_Float")
-var  optionalFloatValue: Float?
+var optionalFloatValue: Float?
 
 @UserDefaultsProperty(key: "Value_Optional_Double")
-var  optionalDoubleValue: Double?
+var optionalDoubleValue: Double?
 
 @UserDefaultsProperty(key: "Value_Optional_Bool")
-var  optionalBoolValue: Bool?
+var optionalBoolValue: Bool?
 
 @UserDefaultsProperty(key: "Value_Optional_String")
-var  optionalStringValue: String?
+var optionalStringValue: String?
 
 @UserDefaultsProperty(key: "Value_Optional_Date")
-var  optionalDateValue: Date?
+var optionalDateValue: Date?
 
 @UserDefaultsProperty(key: "Value_Optional_URL")
-var  optionalUrlValue: URL?
+var optionalUrlValue: URL?
 
-@UserDefaultsProperty(key: "Value_Optional_User", defaultValue: User(age: 10, name: "James", gender: .male))
-var  optionalUserValue: User?
+@UserDefaultsProperty(key: "Value_Optional_User")
+var optionalUserValue: User? = User(age: 10, name: "James", gender: .male)
+
 ```
+
 > Array
+
 ```swift
-@UserDefaultsProperty(key: "Value_Pet", defaultValue: [])
-var petValue: [Pet]
+@UserDefaultsProperty(key: "Value_Pet")
+var petsValue: [Pet] = []
 
 @UserDefaultsProperty(key: "Value_Optional_Pet")
-var  optionalPetsValue: [Pet]?
-```
-## Installation
-
-UserDefaultsProperty is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-  
-```ruby
-
-pod 'UserDefaultsProperty', :tag => '1.1.0', :git => 'https://github.com/nibdevn/UserDefaultsProperty'
-
+var optionalPetsValue: [Pet]?
 ```
 
 ## Example
@@ -133,6 +178,6 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 These works are available under the MIT license. See the [LICENSE][license] file
 for more info.
-  
+
 
 [license]: LICENSE

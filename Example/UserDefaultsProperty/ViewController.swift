@@ -11,32 +11,32 @@ import UserDefaultsProperty
 
 class ViewController: UIViewController {
     
-    @UserDefaultsProperty(key: "Value_Int", defaultValue: 1)
-    var intValue: Int
+    @UserDefaultsProperty(key: "Value_Int")
+    var intValue: Int = 1
     
-    @UserDefaultsProperty(key: "Value_Float", defaultValue: 2.0)
-    var floatValue: Float
+    @UserDefaultsProperty(key: "Value_Float")
+    var floatValue: Float = 2.0
     
-    @UserDefaultsProperty(key: "Value_Double", defaultValue: 3.0)
-    var doubleValue: Double
+    @UserDefaultsProperty(key: "Value_Double")
+    var doubleValue: Double = 3.0
     
-    @UserDefaultsProperty(key: "Value_Bool", defaultValue: true)
-    var boolValue: Bool
+    @UserDefaultsProperty(key: "Value_Bool")
+    var boolValue: Bool = true
     
-    @UserDefaultsProperty(key: "Value_String", defaultValue: "Test")
-    var stringValue: String
+    @UserDefaultsProperty(key: "Value_String")
+    var stringValue: String = "Test"
     
-    @UserDefaultsProperty(key: "Value_Date", defaultValue: Date())
-    var dateValue: Date
+    @UserDefaultsProperty(key: "Value_Date")
+    var dateValue: Date = Date()
     
-    @UserDefaultsProperty(key: "Value_URL", defaultValue: URL(string: "https://github.com")!)
-    var urlValue: URL
+    @UserDefaultsProperty(key: "Value_URL")
+    var urlValue: URL = URL(string: "https://github.com")!
     
-    @UserDefaultsProperty(key: "Value_User", defaultValue: User(age: 10, name: "James", gender: .male))
-    var userValue: User
+    @UserDefaultsProperty(key: "Value_User")
+    var userValue: User = User(age: 10, name: "James", gender: .male)
     
-    @UserDefaultsProperty(key: "Value_Pet", defaultValue: [])
-    var petsValue: [Pet]
+    @UserDefaultsProperty(key: "Value_Pet")
+    var petsValue: [Pet] = []
     
     @UserDefaultsProperty(key: "Value_Optional_Int")
     var optionalIntValue: Int?
@@ -59,8 +59,8 @@ class ViewController: UIViewController {
     @UserDefaultsProperty(key: "Value_Optional_URL")
     var optionalUrlValue: URL?
     
-    @UserDefaultsProperty(key: "Value_Optional_User", defaultValue: User(age: 10, name: "James", gender: .male))
-    var optionalUserValue: User?
+    @UserDefaultsProperty(key: "Value_Optional_User")
+    var optionalUserValue: User? = User(age: 10, name: "James", gender: .male)
     
     @UserDefaultsProperty(key: "Value_Optional_Pet")
     var optionalPetsValue: [Pet]?

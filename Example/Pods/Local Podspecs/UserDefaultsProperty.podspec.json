@@ -1,8 +1,8 @@
 {
   "name": "UserDefaultsProperty",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "summary": "This is UserDefaultsProperty.",
-  "description": "This is UserDefaultsProperty. Simple use UserDefaults CUID",
+  "description": "This is UserDefaultsProperty. Simple use UserDefaults",
   "homepage": "https://github.com/nibdevn/UserDefaultsProperty",
   "license": {
     "type": "MIT",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/nibdevn/UserDefaultsProperty.git",
-    "tag": "1.1.0"
+    "tag": "2.0.0"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "swift_versions": "5.0",
-  "source_files": "UserDefaultsProperty/**/*",
-  "swift_version": "5.0"
+  "swift_versions": "4.2",
+  "source_files": "Sources/UserDefaultsProperty/**/*",
+  "swift_version": "4.2"
 }

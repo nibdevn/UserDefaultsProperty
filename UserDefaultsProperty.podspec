@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UserDefaultsProperty'
-  s.version          = '1.1.0'
+  s.version          = '2.0.0'
   s.summary          = 'This is UserDefaultsProperty.'
 
 # This description is used to generate tags and improve search results.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'This is UserDefaultsProperty. Simple use UserDefaults CUID'
+  s.description      = 'This is UserDefaultsProperty. Simple use UserDefaults'
 
   s.homepage         = 'https://github.com/nibdevn/UserDefaultsProperty'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -26,9 +26,9 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/nibdevn/UserDefaultsProperty.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
-  s.source_files = 'UserDefaultsProperty/**/*'
+  s.source_files = 'Sources/UserDefaultsProperty/**/*'
   
   # s.resource_bundles = {
   #   'UserDefaultsProperty' => ['UserDefaultsProperty/Assets/*.png']

@@ -11,9 +11,9 @@ extension UserDefaults {
 @propertyWrapper
 public struct UserDefaultsProperty<Element: Codable> {
     
-    public init(key: String, defaultValue: Element) {
+    public init(wrappedValue: Element, key: String) {
         self.key = key
-        self.defaultValue = defaultValue
+        self.defaultValue = wrappedValue
     }
     
     public let key: String
@@ -86,9 +86,9 @@ public struct UserDefaultsProperty<Element: Codable> {
 
 extension UserDefaultsProperty where Element: ExpressibleByNilLiteral {
     
-    public init(key: String, defaultValue: Element = nil) {
+    public init(wrappedValue: Element = nil, key: String) {
         self.key = key
-        self.defaultValue = defaultValue
+        self.defaultValue = wrappedValue
     }
 }
 
