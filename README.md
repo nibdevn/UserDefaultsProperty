@@ -31,7 +31,7 @@ pod 'UserDefaultsProperty', :tag => '2.0.0', :git => 'https://github.com/nibdevn
 
 #### Swift Package Manager
 
-You can use The Swift Package Manager to install GradientImage by adding the proper description to your Package.swift file:
+You can use The Swift Package Manager to install UserDefaultsProperty by adding the proper description to your Package.swift file:
 
 ```swift
 import PackageDescription
@@ -45,7 +45,7 @@ let package = Package(
 )
 ```
 
-Next, add GradientImage to your targets dependencies like so:
+Next, add UserDefaultsProperty to your targets dependencies like so:
 
 ```swift
 .target(
