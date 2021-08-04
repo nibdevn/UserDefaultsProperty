@@ -1,5 +1,5 @@
 PODS:
-  - UserDefaultsProperty (2.0.0)
+  - UserDefaultsProperty (2.0.1)
 
 DEPENDENCIES:
   - UserDefaultsProperty (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  UserDefaultsProperty: 5356ddba69bbe3ca49e6e999e30e20913bc953a3
+  UserDefaultsProperty: 353f23768bd2b33ecd105ab25521df38ac59b3ec
 
 PODFILE CHECKSUM: 857e494103e757316b53b3c408b6016ef577dd4b
 

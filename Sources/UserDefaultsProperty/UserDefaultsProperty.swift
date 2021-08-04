@@ -16,6 +16,11 @@ public struct UserDefaultsProperty<Element: Codable> {
         self.defaultValue = wrappedValue
     }
     
+    public init<Wrapped>(wrappedValue: Element = nil, key: String) where Element == Optional<Wrapped> {
+        self.key = key
+        self.defaultValue = wrappedValue
+    }
+    
     public let key: String
     public let defaultValue: Element
     public var wrappedValue: Element {
@@ -81,14 +86,6 @@ public struct UserDefaultsProperty<Element: Codable> {
     
     public mutating func set(_ setter: @escaping (inout Element) -> Void) {
         setter(&self.wrappedValue)
-    }
-}
-
-extension UserDefaultsProperty where Element: ExpressibleByNilLiteral {
-    
-    public init(wrappedValue: Element = nil, key: String) {
-        self.key = key
-        self.defaultValue = wrappedValue
     }
 }
 

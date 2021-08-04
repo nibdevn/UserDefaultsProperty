@@ -25,7 +25,7 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 
-pod 'UserDefaultsProperty', :tag => '2.0.0', :git => 'https://github.com/nibdevn/UserDefaultsProperty'
+pod 'UserDefaultsProperty', :tag => '2.0.1', :git => 'https://github.com/nibdevn/UserDefaultsProperty'
 
 ```
 
@@ -40,7 +40,7 @@ let package = Package(
     name: "YOUR_PROJECT_NAME",
     targets: [],
     dependencies: [
-        .package(url: "https://github.com/nibdevn/UserDefaultsProperty.git", from: "2.0.0")
+        .package(url: "https://github.com/nibdevn/UserDefaultsProperty.git", from: "2.0.1")
     ]
 )
 ```
